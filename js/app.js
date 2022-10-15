@@ -15,13 +15,25 @@ function storageCost(isCost){
     if(isCost == true){
         unifiedStorage.innerText = 0;
     }
-    if(isCost == true){
-        unifiedStorage.innerText = 100; 
+    else if(isCost == false){
+        unifiedStorage.innerText = 100;
     }
     else if(isCost == false){
         unifiedStorage.innerText = 180;
     }
 }
+
+// for delivery
+function deliveryCost(isDelivered){
+    const deliverOption = document.getElementById('delivery-charge');
+    if(isDelivered == true){
+        deliverOption.innerText = 0;
+    }
+    else{
+        deliverOption.innerText = 20;
+    }
+}
+
 
 // memory events
 document.getElementById('8GB-memory').addEventListener('click', function(){
@@ -43,4 +55,14 @@ document.getElementById('512GB-storage').addEventListener('click', function(){
 
 document.getElementById('1TB-storage').addEventListener('click', function(){
     storageCost(false);
+});
+
+
+// delivery option events
+document.getElementById('free-delivery').addEventListener('click', function(){
+    deliveryCost(true);
+});
+
+document.getElementById('pay-delivery').addEventListener('click', function(){
+    deliveryCost(false);
 });
