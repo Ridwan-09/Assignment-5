@@ -1,6 +1,6 @@
+// for memory 
 function memoryCost(isAdd){
     const unifiedMemory = document.getElementById('extra-memory-cost');
-    const unifiedMemoryText = unifiedMemory.innerText;
     if(isAdd == true){
         unifiedMemory.innerText = 0;
     }
@@ -9,7 +9,7 @@ function memoryCost(isAdd){
     }
 }
 
-
+// memory events
 document.getElementById('8GB-memory').addEventListener('click', function(){
     memoryCost(true);
 });
