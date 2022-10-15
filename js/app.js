@@ -1,4 +1,4 @@
-function memoryButton(memoryId, chooseMemory){
+function memoryButton(chooseMemory){
     const buyMemory = document.getElementById('extra-memory-cost');
     const buyMemoryInput = buyMemory.innerText;
     if (chooseMemory == true){
@@ -12,9 +12,9 @@ function memoryButton(memoryId, chooseMemory){
 
 
 document.getElementById('8GB-memory').addEventListener('click', function(){
-    memoryButton('8GB', true);
+    memoryButton(true);
 });
 
 document.getElementById('16GB-memory').addEventListener('click', function(){
-    memoryButton('16GB', false);
+    memoryButton(false);
 });
