@@ -2,10 +2,10 @@ function memoryButton(memoryId, chooseMemory){
     const buyMemory = document.getElementById('extra-memory-cost');
     const buyMemoryInput = buyMemory.innerText;
     if (chooseMemory == true){
-        newPrice = $0;
+        newPrice = 0;
     }
     else if(chooseMemory == false){
-        newPrice = $180;
+        newPrice = 180;
     }
     return buyMemoryInput;
 }
