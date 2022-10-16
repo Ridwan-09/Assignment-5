@@ -34,7 +34,6 @@ function calculateTotal(){
     document.getElementById('extra-storage-cost').innerText = extraStorageCost;
     document.getElementById('delivery-charge').innerText = deliveryCharge;
     document.getElementById('total-price').innerText = totalPrice;
-
 }
 
 
