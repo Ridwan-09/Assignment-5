@@ -21,7 +21,7 @@ function deliveryBtn(delivery){
     return deliveryPriceText;
 }
 
-
+// total
 function calculateTotal(){
     const bestPrice = 1219;
     const extraMemoryCost = memoryBtn(price);
