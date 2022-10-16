@@ -6,14 +6,18 @@ function memoryCost(){
 }
 
 // for storage 
-// function storageCost(isCost){
-    
-// }
+function storageCost(){
+    const ssdStorage = document.getElementById('extra-storage-cost');
+    const ssdStorageText = ssdStorage.innerText;
+    return ssdStorageText;
+}
 
 // // for delivery
-// function deliveryCost(isDelivered){
-    
-// }
+function deliveryCost(){
+    const deliverCharge = document.getElementById('delivery-charge');
+    const deliverChargeText = deliverCharge.innerText;
+    return deliverChargeText;
+}
 
 // calculation
 
@@ -21,11 +25,11 @@ function memoryCost(){
 
 // memory events
 document.getElementById('8GB-memory').addEventListener('click', function(){
-    memoryCost('unifiedMemoryText');
+    
 });
 
 document.getElementById('16GB-memory').addEventListener('click', function(){
-    memoryCost('unifiedMemoryText');
+    
 });
 
 // // storage events
