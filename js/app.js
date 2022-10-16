@@ -22,6 +22,22 @@ function deliveryBtn(delivery){
 }
 
 
+function calculateTotal(){
+    const bestPrice = 1219;
+    const extraMemoryCost = memoryBtn(price);
+    const extraStorageCost = storageBtn(storage);
+    const deliveryCharge = deliveryBtn(delivery);
+    const totalPrice = bestPrice + extraMemoryCost + extraStorageCost + deliveryCharge;
+    
+    document.getElementById('best-price').innerText = bestPrice;
+    document.getElementById('extra-memory-cost').innerText = extraMemoryCost;
+    document.getElementById('extra-storage-cost').innerText = extraStorageCost;
+    document.getElementById('delivery-charge').innerText = deliveryCharge;
+    document.getElementById('total-price').innerText = totalPrice;
+
+}
+
+
 // memory events
 document.getElementById('8GB-memory').addEventListener('click', function(){
     memoryBtn('0');
