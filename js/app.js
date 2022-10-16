@@ -8,7 +8,7 @@ function memoryBtn(memory){
     else {
         unifiedMemory.innerText = 180;
     }
-    return unifiedMemoryText;
+  
 }
 
 
@@ -25,7 +25,7 @@ function storageBtn(storage){
     else{
         ssdStorage.innerText = 180;
     }
-    return ssdStorageText;
+    
 }
 
 // memory events
